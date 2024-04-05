@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "3.1.2"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.0.4"
+gem "rails", "~> 7.0.8", ">= 7.0.8.1"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
@@ -16,13 +16,13 @@ gem "sqlite3", "~> 1.4"
 gem "puma", "~> 5.0"
 
 # Bundle and transpile JavaScript [https://github.com/rails/jsbundling-rails]
-gem "jsbundling-rails"
+gem "jsbundling-rails", ">= 1.1.0"
 
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
-gem "turbo-rails"
+gem "turbo-rails", ">= 1.3.1"
 
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
-gem "stimulus-rails"
+gem "stimulus-rails", ">= 1.1.1"
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
@@ -55,7 +55,7 @@ end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
-  gem "web-console"
+  gem "web-console", ">= 4.2.1"
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
@@ -66,25 +66,25 @@ end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem "capybara"
+  gem "capybara", ">= 3.38.0"
   gem "selenium-webdriver"
-  gem "webdrivers"
-  gem 'rspec-rails', '~> 6.0.0'
+  gem "webdrivers", ">= 5.3.0"
+  gem 'rspec-rails', '~> 6.0.2'
   gem 'shoulda-matchers', '~> 5.3'
 end
 
-gem "inertia_rails", "~> 3.0"
+gem "inertia_rails", "~> 3.1", ">= 3.1.0"
 
-gem "vite_rails", "~> 3.0"
+gem "vite_rails", "~> 3.0", ">= 3.0.13"
 
 gem "faker", "~> 3.1"
 
 
-gem "solargraph", "~> 0.47.2", :group => :development
+gem "solargraph", "~> 0.48.0", :group => :development
 
-gem "factory_bot_rails", "~> 6.2", :group => :test
+gem "factory_bot_rails", "~> 6.3", ">= 6.3.0", :group => :test
 
-gem "rubocop-rails", "~> 2.17", :group => :development
+gem "rubocop-rails", "~> 2.18", ">= 2.18.0", :group => :development
 
 gem "rubocop-performance", "~> 1.15", :group => :development
 
@@ -97,13 +97,13 @@ gem "database_cleaner", "~> 2.0", :group => :test
 gem "pagy", "~> 5.10"
 
 gem "aws-sdk-s3", require: false
-gem "active_storage_validations", "~> 1.0"
-gem "rack-attack", "~> 6.6"
+gem "active_storage_validations", "~> 1.0", ">= 1.0.4"
+gem "rack-attack", "~> 6.7", ">= 6.7.0"
 
 gem "graphql", "~> 2.0"
-gem "graphiql-rails", group: :development
-gem "sidekiq", "~> 7.0"
+gem "graphiql-rails", ">= 1.9.0", group: :development
+gem "sidekiq", "~> 7.0", ">= 7.0.3"
 
-gem "sinatra", "~> 3.0"
+gem "sinatra", "~> 3.0", ">= 3.0.6"
 
-gem "rspec-sidekiq", "~> 3.1", :group => :test
+gem "rspec-sidekiq", "~> 4.0", ">= 4.0.0", :group => :test
