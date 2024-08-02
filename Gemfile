@@ -67,8 +67,8 @@ end
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
-  gem "selenium-webdriver"
-  gem "webdrivers"
+  gem "selenium-webdriver", ">= 4.8.0"
+  gem "webdrivers", ">= 5.3.0"
   gem 'rspec-rails', '~> 6.0.0'
   gem 'shoulda-matchers', '~> 5.3'
 end
@@ -80,15 +80,15 @@ gem "vite_rails", "~> 3.0"
 gem "faker", "~> 3.1"
 
 
-gem "solargraph", "~> 0.47.2", :group => :development
+gem "solargraph", "~> 0.48.0", :group => :development
 
 gem "factory_bot_rails", "~> 6.2", :group => :test
 
-gem "rubocop-rails", "~> 2.17", :group => :development
+gem "rubocop-rails", "~> 2.18", ">= 2.18.0", :group => :development
 
-gem "rubocop-performance", "~> 1.15", :group => :development
+gem "rubocop-performance", "~> 1.15", ">= 1.15.1", :group => :development
 
-gem "rubocop-rspec", "~> 2.15", :group => :development
+gem "rubocop-rspec", "~> 2.16", ">= 2.16.0", :group => :development
 
 gem "pg", "~> 1.4"
 
