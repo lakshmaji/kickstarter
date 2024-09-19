@@ -96,7 +96,7 @@ GEM
     bindex (0.8.1)
     bootsnap (1.13.0)
       msgpack (~> 1.2)
-    builder (3.2.4)
+    builder (3.3.0)
     capybara (3.37.1)
       addressable
       matrix
@@ -106,7 +106,7 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
-    concurrent-ruby (1.1.10)
+    concurrent-ruby (1.3.4)
     connection_pool (2.3.0)
     crass (1.0.6)
     database_cleaner (2.0.1)
@@ -121,7 +121,7 @@ GEM
     diff-lcs (1.5.0)
     dry-cli (0.7.0)
     e2mmap (0.1.0)
-    erubi (1.11.0)
+    erubi (1.13.0)
     factory_bot (6.2.1)
       activesupport (>= 5.0.0)
     factory_bot_rails (6.2.0)
@@ -130,13 +130,13 @@ GEM
     faker (3.1.0)
       i18n (>= 1.8.11, < 2)
     ffi (1.15.5)
-    globalid (1.0.0)
-      activesupport (>= 5.0)
+    globalid (1.2.1)
+      activesupport (>= 6.1)
     graphiql-rails (1.8.0)
       railties
       sprockets-rails
     graphql (2.0.16)
-    i18n (1.12.0)
+    i18n (1.14.6)
       concurrent-ruby (~> 1.0)
     image_processing (1.12.2)
       mini_magick (>= 4.9.5, < 5)
@@ -158,17 +158,17 @@ GEM
       rexml
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
-    loofah (2.19.1)
+    loofah (2.22.0)
       crass (~> 1.0.2)
-      nokogiri (>= 1.5.9)
+      nokogiri (>= 1.12.0)
     mail (2.7.1)
       mini_mime (>= 0.1.1)
     marcel (1.0.2)
     matrix (0.4.2)
-    method_source (1.0.0)
+    method_source (1.1.0)
     mini_magick (4.11.0)
     mini_mime (1.1.2)
-    minitest (5.16.3)
+    minitest (5.25.1)
     msgpack (1.6.0)
     mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)
@@ -181,9 +181,9 @@ GEM
     net-smtp (0.3.2)
       net-protocol
     nio4r (2.5.8)
-    nokogiri (1.13.10-x86_64-darwin)
+    nokogiri (1.16.7-x86_64-darwin)
       racc (~> 1.4)
-    nokogiri (1.13.10-x86_64-linux)
+    nokogiri (1.16.7-x86_64-linux)
       racc (~> 1.4)
     pagy (5.10.1)
       activesupport
@@ -194,15 +194,15 @@ GEM
     public_suffix (5.0.0)
     puma (5.6.5)
       nio4r (~> 2.0)
-    racc (1.6.1)
-    rack (2.2.5)
+    racc (1.8.1)
+    rack (2.2.9)
     rack-attack (6.6.1)
       rack (>= 1.0, < 3)
     rack-protection (3.0.5)
       rack
     rack-proxy (0.7.4)
       rack
-    rack-test (2.0.2)
+    rack-test (2.1.0)
       rack (>= 1.3)
     rails (7.0.4)
       actioncable (= 7.0.4)
@@ -218,11 +218,13 @@ GEM
       activesupport (= 7.0.4)
       bundler (>= 1.15.0)
       railties (= 7.0.4)
-    rails-dom-testing (2.0.3)
-      activesupport (>= 4.2.0)
+    rails-dom-testing (2.2.0)
+      activesupport (>= 5.0.0)
+      minitest
       nokogiri (>= 1.6)
-    rails-html-sanitizer (1.4.4)
-      loofah (~> 2.19, >= 2.19.1)
+    rails-html-sanitizer (1.6.0)
+      loofah (~> 2.21)
+      nokogiri (~> 1.14)
     railties (7.0.4)
       actionpack (= 7.0.4)
       activesupport (= 7.0.4)
@@ -231,7 +233,7 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     rainbow (3.1.1)
-    rake (13.0.6)
+    rake (13.2.1)
     redis-client (0.11.2)
       connection_pool
     regexp_parser (2.6.1)
@@ -328,14 +330,13 @@ GEM
     sqlite3 (1.5.2-x86_64-linux)
     stimulus-rails (1.1.0)
       railties (>= 6.0.0)
-    thor (1.2.1)
+    thor (1.3.2)
     tilt (2.0.11)
     timeout (0.3.0)
-    turbo-rails (1.3.0)
+    turbo-rails (2.0.9)
       actionpack (>= 6.0.0)
-      activejob (>= 6.0.0)
       railties (>= 6.0.0)
-    tzinfo (2.0.5)
+    tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.3.0)
     vite_rails (3.0.12)
@@ -363,7 +364,7 @@ GEM
       nokogiri (~> 1.8)
     yard (0.9.28)
       webrick (~> 1.7.0)
-    zeitwerk (2.6.1)
+    zeitwerk (2.6.18)
 
 PLATFORMS
   x86_64-darwin-20
@@ -403,7 +404,7 @@ DEPENDENCIES
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails
-  turbo-rails
+  turbo-rails (>= 2.0.8)
   tzinfo-data
   vite_rails (~> 3.0)
   web-console
@@ -413,4 +414,4 @@ RUBY VERSION
    ruby 3.1.2p20
 
 BUNDLED WITH
-   2.3.21
+   2.3.26
