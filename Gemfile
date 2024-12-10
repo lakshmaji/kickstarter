@@ -73,7 +73,7 @@ group :test do
   gem 'shoulda-matchers', '~> 5.3'
 end
 
-gem "inertia_rails", "~> 3.0"
+gem "inertia_rails", "~> 3.1", ">= 3.1.3"
 
 gem "vite_rails", "~> 3.0"
 
@@ -101,7 +101,7 @@ gem "active_storage_validations", "~> 1.0"
 gem "rack-attack", "~> 6.6"
 
 gem "graphql", "~> 2.0"
-gem "graphiql-rails", group: :development
+gem "graphiql-rails", ">= 1.10.0", group: :development
 gem "sidekiq", "~> 7.0"
 
 gem "sinatra", "~> 3.0"
